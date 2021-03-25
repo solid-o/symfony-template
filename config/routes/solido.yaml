@@ -1,0 +1,3 @@
+app_dto:
+    resource: App\DTO\
+    type: dto_annotations

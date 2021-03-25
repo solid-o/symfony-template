@@ -1,0 +1,24 @@
+solido:
+    form:
+        register_data_mapper: true
+        auto_submit: true
+
+    cors:
+        max_age: 3600
+        allow_headers:
+            - Accept
+            - Authorization
+            - Content-Type
+            - X-Order
+            - Range
+
+        expose_headers:
+            - X-Total-Count
+            - X-Continuation-Token
+
+    dto:
+        namespaces:
+            - 'App\DTO'
+
+    serializer:
+        catch_exceptions: true
