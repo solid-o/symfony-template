@@ -7,6 +7,7 @@ services:
         resource: '../src/'
         exclude:
             - '../src/DependencyInjection/'
+            - '../src/DTO/'
             - '../src/Entity/'
             - '../src/Kernel.php'
             - '../src/Tests/'
@@ -14,3 +15,7 @@ services:
     App\Controller\:
         resource: '../src/Controller/'
         tags: ['controller.service_arguments']
+
+    App\DTO\:
+        resource: '../src/DTO/'
+        shared: false

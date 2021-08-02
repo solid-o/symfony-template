@@ -22,3 +22,7 @@ solido:
 
     serializer:
         catch_exceptions: true
+
+when@test:
+    solido:
+        test: ~
