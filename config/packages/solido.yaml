@@ -1,8 +1,4 @@
 solido:
-    form:
-        register_data_mapper: true
-        auto_submit: true
-
     cors:
         max_age: 3600
         allow_headers:

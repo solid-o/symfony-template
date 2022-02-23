@@ -12,10 +12,6 @@ services:
             - '../src/Kernel.php'
             - '../src/Tests/'
 
-    App\Controller\:
-        resource: '../src/Controller/'
-        tags: ['controller.service_arguments']
-
     App\DTO\:
         resource: '../src/DTO/'
         shared: false
