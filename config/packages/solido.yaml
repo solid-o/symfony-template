@@ -12,12 +12,18 @@ solido:
             - X-Total-Count
             - X-Continuation-Token
 
+    request:
+        default_mime_type: application/json
+
     dto:
         namespaces:
             - 'App\DTO'
 
     serializer:
         catch_exceptions: true
+
+    urn:
+        default_domain: org.example
 
 when@test:
     solido:
