@@ -3,29 +3,38 @@
     "description": "",
     "type": "project",
     "license": "MIT",
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "prefer-stable": true,
+    "repositories": [
+        {
+            "type": "path",
+            "url": "../*",
+            "options": {
+                "symlink": true
+            }
+        }
+    ],
     "require": {
-        "php": "^8.3",
+        "php": "^8.4",
         "ext-ctype": "*",
         "ext-iconv": "*",
         "friendsofphp/proxy-manager-lts": "^1.0",
-        "kcs/serializer": "^4.5",
-        "solido/solido": "^0.4",
-        "solido/symfony": "^0.4",
-        "symfony/console": "*",
-        "symfony/dotenv": "*",
-        "symfony/expression-language": "*",
+        "kcs/serializer": "^5.0",
+        "solido/solido": "dev-master",
+        "solido/symfony": "dev-master",
+        "symfony/console": "^8.1",
+        "symfony/dotenv": "^8.1",
+        "symfony/expression-language": "^8.1",
         "symfony/flex": "^2.0",
-        "symfony/framework-bundle": "*",
-        "symfony/runtime": "*",
-        "symfony/yaml": "*"
+        "symfony/framework-bundle": "^8.1",
+        "symfony/runtime": "^8.1",
+        "symfony/yaml": "^8.1"
     },
     "require-dev": {
         "solido/php-coding-standards": "dev-master",
-        "solido/test-utils": "^0.4",
+        "solido/test-utils": "^0.4 || ^0.5",
         "roave/security-advisories": "dev-master",
-        "symfony/debug-bundle": "*"
+        "symfony/debug-bundle": "^8.1"
     },
     "config": {
         "optimize-autoloader": true,
@@ -79,7 +88,7 @@
     "extra": {
         "symfony": {
             "allow-contrib": false,
-            "require": "7.2.*"
+            "require": "8.1.*"
         }
     }
 }
